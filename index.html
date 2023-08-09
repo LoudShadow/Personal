@@ -3,137 +3,148 @@
 <html lang="en">
 
 
-    <head>
-        <link rel="stylesheet" href="style.css">
-    </head>
-
-    <script>
-        function gotTo(X,Y){
-            let element = document.getElementsByClassName("page")[0];
-            let elem_width = element.offsetWidth;
-            let elem_height = element.offsetHeight;
-
-            document.rootElement.scrollTo(X*elem_width,Y*elem_height)
-        }
-
-
-    </script>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
 
 
 
-    <body>
+<body>
 
-        <div class="page-Wrapper">
+    <div class="header">
+        <a class="header-button">ABOUT</a>
+        <a class="header-button">PROJECTS</a>
+        <a class="header-button" href="https://github.com/LoudShadow">GITHUB</a>
+        
+    </div>
 
-            <div class="about-wrapper page">
-                <button onclick="document.getElementsByClassName('title-wrapper')[0].scrollIntoView({behavior:'smooth'})"> 
-                    BACK 
-                </button>  
-            </div>
+    <div class="title-wrapper page">
 
-            <div class="projects-wrapper page">
-                <!-- <button onclick="document.getElementsByClassName('title-wrapper')[0].scrollIntoView({behavior:'smooth'})"> 
-                    BACK 
-                </button>   -->
+        <div class="name-wrapper">
+            <div class="word-wrapper">
 
-                <div class="project-item-wrapper"><div class="project-item">Project 1</div></div>
-                <div class="project-item-wrapper"><div class="project-item">Project 2</div></div>
-                <div class="project-item-wrapper"><div class="project-item">Project 3</div></div>
-                <div class="project-item-wrapper"><div class="project-item">Project 4</div></div>
-                <div class="project-item-wrapper"><div class="project-item">Project 5</div></div>
-                <div class="project-item-wrapper"><div class="project-item">Project 6</div></div>
-                <div class="project-item-wrapper"><div class="project-item">Project 7</div></div>
-                <div class="project-item-wrapper"><div class="project-item">Project 8</div></div>
-
-
-            </div>
-
-            <div class="other-wrapper page">
-                <button onclick="document.getElementsByClassName('title-wrapper')[0].scrollIntoView({behavior:'smooth'})"> 
-                    BACK 
-                </button>  
-            </div>
-
-            <div class="contact-wrapper page">
-                <button onclick="document.getElementsByClassName('title-wrapper')[0].scrollIntoView({behavior:'smooth'})"> 
-                    BACK 
-                </button>  
-            </div>
-
-
-
-
-            <div class="title-wrapper page">
-                <div class="inner-wrapper">
-
-                
-                <div class="link-Wrapper">
-                    <div class="home-link-wrapper">
-                        <button class="home-link" onclick="document.getElementsByClassName('about-wrapper')[0].scrollIntoView({behavior:'smooth'})">
-                            About
-                        </button>
-                    </div>
-                    <div class="home-link-wrapper">
-                        <button class="home-link" onclick="document.getElementsByClassName('projects-wrapper')[0].scrollIntoView({behavior:'smooth'})">
-                            Projects
-                        </button>
-                    </div>
-                    <div class="home-link-wrapper">
-                        <button class="home-link" onclick="document.getElementsByClassName('other-wrapper')[0].scrollIntoView({behavior:'smooth'})">
-                            Other
-                        </button>
-                    </div>
-                    <div class="home-link-wrapper">
-                        <button class="home-link" onclick="document.getElementsByClassName('contact-wrapper')[0].scrollIntoView({behavior:'smooth'})">
-                            Contact
-                        </button>
-                    </div>
+                <div class="name" id="name-1" data-shown="false">
+                    <span class="name-letter">J</span><!--
+                    --><span class="name-letter">O</span><!--
+                    --><span class="name-letter">S</span><!--
+                    --><span class="name-letter">E</span><!--
+                    --><span class="name-letter">P</span><!--
+                    --><span class="name-letter">H</span>
                 </div>
-
-                <div class="name-wrapper">
-                    <div class="word-wrapper">
-
-                        <div class="name" id="name-1" data-shown="false">
-                        <span class="name-letter">J</span>
-                        <span class="name-letter">O</span>
-                        <span class="name-letter">S</span>
-                        <span class="name-letter">E</span>
-                        <span class="name-letter">P</span>
-                        <span class="name-letter">H</span>
-                    </div>
-                    <div class="underline" data-shown="false"></div>
-                </div>
-                    <div class="word-wrapper">
-                        <div class="name" id="name-2"  data-shown="false">                
-                            <span class="name-letter">E</span>
-                            <span class="name-letter">V</span>
-                            <span class="name-letter">A</span>
-                            <span class="name-letter">N</span>
-                            <span class="name-letter">S</span>
-                        </div>
-                        <div class="underline" data-shown="false"></div>
-                    </div>
-                </div>
-                </div>
+                <div class="underline" data-shown="false"></div>
             </div>
-            <p>Home page content goes here.</p>
+            <div class="word-wrapper">
+                <div class="name" id="name-2" data-shown="false">
+                    <span class="name-letter">E</span><!--
+                    --><span class="name-letter">V</span><!--
+                    --><span class="name-letter">A</span><!--
+                    --><span class="name-letter">N</span><!--
+                    --><span class="name-letter">S</span>
+                </div>
+                <div class="underline" data-shown="false"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="page-header">
+            <div class="page-header-title">
+                <h1>ABOUT</h1>
+            </div>
+        </div>
+        <div class="page-content">
+            <h1>Joseph Evans</h1>
+            <br>
+            <h3>
+                Graduate Software Engineer
+            </h3>
+            <p>
+                I am a graduate software engineer with a passion for technology and problem solving and a recent graduate from the 
+                University of Warwick, where I studied Computer Science and achieved a first class degree. 
+                I am currently about to join Lloyds Banking Group as a software engineer and am looking forward to working on the technology and 
+                systems in use. 
+            </p>
+        </div>
+
+
 
     </div>
-    </body>
+    <div class="page">
+        <div class="page-header">
+            <div class="page-header-title">
+                <h1>EDUCATION</h1>
+            </div>
+        </div>
+        <div class="page-content">
 
-    <script>
-        document.getElementById("name-1").setAttribute("data-shown", "true");
-        setTimeout(function() {
-            document.getElementById("name-2").setAttribute("data-shown", "true");
-        }, 1500);
+            <div class="columns">
+                <div class="left">
+                    <h2>
+                        Secondary Education
+                    </h2>
 
-        setTimeout(function() {
-            elements=document.getElementsByClassName("underline")
-            for (let i = 0; i < elements.length; i++) {
-                elements[i].setAttribute("data-shown", "true");
-            }
-        }, 3000);
+                    <h3>
+                        GCSE - Horsforth School
+                    </h3>
+
+                    <h3>
+                        A-Levels - Horsforth School
+                    </h3>
+
+                </div>
+                <div class="right">
+                    <h2>
+                        University
+                    </h2>
+
+                    <h3>
+                        BSc - University of Warwick
+                    </h3>
+
+                </div>
+                <div class="bottom">
+                    <h2>
+                        Certifications
+                    </h2>
+
+                    <h3>
+                        NPLQ - Lifeguard
+                    </h3>
+                </div>
+            </div>
 
 
-    </script>
+        </div>
+    </div>
+
+    <div class="page mosaic-page">
+        <div class="mosaic colorful">
+            Warwick 
+            <br>
+            <br>
+            Wrapped
+        </div>
+        <div class="mosaic colorful">
+            Headcount
+            <br>
+            <br>
+            Sheets
+        </div>
+        <div class="mosaic colorful">
+            Kubernetes
+        </div>
+        <div class="mosaic colorful"></div>
+        <div class="mosaic colorful"></div>
+        <div class="mosaic colorful"></div>
+        <div class="mosaic colorful">
+            Website
+        </div>
+    </div>
+
+
+    </div>
+
+    </div>
+</body>
+
 </html>
