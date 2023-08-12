@@ -7,20 +7,41 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<script>
+    const goToAbout = () => {
+        document.getElementById("about").scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
+    const goToEducation = () => {
+        document.getElementById("education").scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
+    const goToProjects = () => {
+        document.getElementById("projects").scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
+
+
+</script>
 
 
 <body>
 
     <div class="header">
-        <a class="header-button">ABOUT</a>
-        <a class="header-button">PROJECTS</a>
+        <a class="header-button" onclick="goToAbout()">ABOUT</a>
+        <a class="header-button" onclick="goToEducation()">EDUCATION</a>
+        <a class="header-button" onclick="goToProjects()">PROJECTS</a>
         <a class="header-button" href="https://github.com/LoudShadow">GITHUB</a>
         
     </div>
+    <div class="content">
 
-    <div class="title-wrapper page">
-
-        <div class="name-wrapper">
+        <div class="title-wrapper page">
+            
+            <div class="name-wrapper">
             <div class="word-wrapper">
 
                 <div class="name" id="name-1" data-shown="false">
@@ -46,7 +67,7 @@
         </div>
     </div>
 
-    <div class="page">
+    <div class="page" id="about">
         <div class="page-header">
             <div class="page-header-title">
                 <h1>ABOUT</h1>
@@ -69,27 +90,54 @@
 
 
     </div>
-    <div class="page">
+    <div class="page" id="education">
         <div class="page-header">
             <div class="page-header-title">
                 <h1>EDUCATION</h1>
             </div>
         </div>
         <div class="page-content">
-
+            
             <div class="columns">
                 <div class="left">
                     <h2>
                         Secondary Education
                     </h2>
-
-                    <h3>
-                        GCSE - Horsforth School
-                    </h3>
-
-                    <h3>
-                        A-Levels - Horsforth School
-                    </h3>
+                    <div class="timetable-item">
+                        
+                        <div class="timetable-time">
+                            September 2015 <br> 
+                            August 2017
+                        </div>
+                        <div class="timetable-body">
+                            
+                            <h3>
+                                GCSEs
+                            </h3>
+                            <p>
+                                10 GCSEs including Mathematics and English
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timetable-item">
+                        
+                        <div class="timetable-time">
+                            September 2017 <br> 
+                            August 2019
+                        </div>
+                        <div class="timetable-body">
+                            
+                            <h3>
+                                A-Levels
+                            </h3>
+                            <p>
+                                Computer Science - A* <br>
+                                Mathematics - A <br>
+                                Further Mathematics - A <br>
+                                Physics - A <br>
+                            </p>
+                        </div>
+                    </div>
 
                 </div>
                 <div class="right">
@@ -97,19 +145,36 @@
                         University
                     </h2>
 
-                    <h3>
-                        BSc - University of Warwick
-                    </h3>
-
+                    <div class="timetable-item">
+                        
+                        <div class="timetable-time">
+                            September 2020 <br> July 2023 
+                        </div>
+                        <div class="timetable-body">
+                            
+                            <h3>
+                                BSc - University of Warwick
+                            </h3>
+                            <p class="bullet">
+                                Computer Science - First Class with Honours
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div class="bottom">
                     <h2>
                         Certifications
                     </h2>
-
-                    <h3>
-                        NPLQ - Lifeguard
-                    </h3>
+                    
+                    <div class="timetable-body">
+                        
+                        <h3>
+                            NPLQ - Lifeguard
+                        </h3>
+                        <p>
+                            Have knowledge of first aid and CPR and am able to perform rescues in a pool environment.
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -117,7 +182,7 @@
         </div>
     </div>
 
-    <div class="page mosaic-page">
+    <div class="page mosaic-page" id="projects">
         <div class="mosaic colorful">
             Warwick 
             <br>
@@ -145,6 +210,7 @@
     </div>
 
     </div>
+</div>
 </body>
 
 </html>
